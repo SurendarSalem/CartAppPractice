@@ -32,6 +32,7 @@ class LoginActivity : AppCompatActivity() {
             val userName = etUserName.text?.toString()?.trim()
             val password = etPassword.text?.toString()?.trim()
             if (userName.equals(USERNAME) && password.equals(PASSWORD)) {
+                finish()
                 val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
             } else {
